@@ -28,6 +28,8 @@ dependencies {
 		annotationProcessor("org.projectlombok:lombok")
 		implementation("org.springframework.boot:spring-boot-starter-validation")
 
+		implementation("org.springframework.boot:spring-boot-starter-security")
+
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 		testImplementation(platform("org.junit:junit-bom:5.10.1"))

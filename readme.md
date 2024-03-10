@@ -23,6 +23,8 @@ Than you'll get a list of articles as Page.class.
 3. For getting a count of published articles on daily bases for the 7 days
 URL - `/inner-api/number-of-articles-last-7-days`
 
+I use basic auth for secure API. E.g. you could create a request using postman and select `Basic Auth`. UserName - User, Password you could take
+from app logs.
 
 ## how to try
 1. Clone an app
