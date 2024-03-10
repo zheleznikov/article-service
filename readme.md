@@ -5,22 +5,24 @@
 
 It has 3 API:
 1. For adding an article. POST-request
-URL - /api/v1/create-article
+URL - `/api/v1/create-article`
 
-
-    {
-        "title": "Great title",
-        "author": "Serg Zhele",
-        "content": "This article is about ...",
-        "publishingDate": "2024-03-10"
-    } 
+    
+        {
+            "title": "Great title",
+            "author": "Serg Zhele",
+            "content": "This article is about ...",
+            "publishingDate": "2024-03-10"
+        } 
 
 2. For getting list of articles
-URL - /api/v1/article-list?number=0&size=2
-You can get a list of articles as Page
+URL - `/api/v1/article-list`.
+
+You could add queryParams for pagination: size and number. E.g. `/api/v1/article-list?number=2&size=6`.
+Than you'll get a list of articles as Page.class.
 
 3. For getting a count of published articles on daily bases for the 7 days
-URL - /inner-api/number-of-articles-last-7-days
+URL - `/inner-api/number-of-articles-last-7-days`
 
 
 ## how to try
