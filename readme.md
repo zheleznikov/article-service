@@ -14,17 +14,19 @@ URL - `/api/v1/create-article`
             "publishingDate": "2024-03-10"
         } 
 
+This is available for user and admin with basic auth: `Username: user and Password: pwd`
 2. For getting list of articles
-URL - `/api/v1/article-list`.
+URL - `/api/v1/article-list`
+This is available for user and admin with basic auth: `Username: user and Password: pwd`
 
 You could add queryParams for pagination: size and number. E.g. `/api/v1/article-list?number=2&size=6`.
 Than you'll get a list of articles as Page.class.
 
 3. For getting a count of published articles on daily bases for the 7 days
 URL - `/inner-api/number-of-articles-last-7-days`
+This is available only for admin with basic auth: `Username: user and Password: pwd`
 
-I use basic auth for secure API. E.g. you could create a request using postman and select `Basic Auth`. UserName - User, Password you could take
-from app logs.
+
 
 ## how to try
 1. Clone an app
