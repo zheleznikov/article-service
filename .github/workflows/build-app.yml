@@ -1,0 +1,31 @@
+name: Build app
+run-name: Build App
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout project sources
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Build App
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: build
+
+#      # https://github.com/marketplace/actions/code-climate-coverage-action
+#      - name: Publish code coverage
+#        uses: paambaati/codeclimate-action@v5.0.0
+#        env:
+#          CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+#          JACOCO_SOURCE_PATH: "${{github.workspace}}/src/main/java"
+#        with:
+#          coverageLocations: ${{github.workspace}}/build/reports/jacoco/test/jacocoTestReport.xml:jacoco
+
