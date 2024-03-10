@@ -1,6 +1,5 @@
 # A test application for store articles
-[![Build app](https://github.com/zheleznikov/article-service/actions/workflows/build-app.yml/badge.svg)](https://github.com/zheleznikovarticle-service/actions/workflows/build-app.yml)
-
+[![Build app](https://github.com/zheleznikov/article-service/actions/workflows/build-app.yml/badge.svg)](https://github.com/zheleznikov/article-service/actions/workflows/build-app.yml)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ca2a9249bbf69d4893a4/test_coverage)](https://codeclimate.com/github/zheleznikov/article-service/test_coverage)
 
 It has 3 API:
