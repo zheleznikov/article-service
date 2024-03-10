@@ -15,6 +15,7 @@ URL - `/api/v1/create-article`
         } 
 
 This is available for user and admin with basic auth: `Username: user and Password: pwd`
+
 2. For getting list of articles
 URL - `/api/v1/article-list`
 This is available for user and admin with basic auth: `Username: user and Password: pwd`
