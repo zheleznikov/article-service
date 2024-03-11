@@ -12,7 +12,8 @@ import java.time.LocalDate;
 @Accessors(chain = true)
 public class CreateArticleRequest {
 
-
+    @NotBlank
+    @NotNull
     private LocalDate publishingDate;
 
     @NotBlank

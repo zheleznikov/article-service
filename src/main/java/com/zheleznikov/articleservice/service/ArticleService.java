@@ -6,6 +6,7 @@ import com.zheleznikov.articleservice.entity.Article;
 import com.zheleznikov.articleservice.exception.ArticleServiceException;
 import com.zheleznikov.articleservice.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -20,7 +21,8 @@ public class ArticleService {
 
     private final ArticleRepository articleRepository;
 
-    private String message = "Article successfully created";
+    @Value("${service.messages.article-created}")
+    private String message;
 
     private final String defaultSortProperty = "createdAt";
 

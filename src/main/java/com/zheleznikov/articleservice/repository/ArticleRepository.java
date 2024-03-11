@@ -17,8 +17,7 @@ public interface ArticleRepository extends JpaRepository<Article, UUID>,
 
 
     @Query(name = "select count(publishing_date) from article" +
-            "where publishing_date" +
-            "between current_date - INTERVAL '7 days' and current_date",
+            "where publishing_date between current_date - INTERVAL '7 days' and current_date",
             nativeQuery = true)
     long countBy();
 }

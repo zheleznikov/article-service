@@ -58,6 +58,7 @@ tasks.jacocoTestReport {
 				fileTree(it) {
 						setExcludes(listOf(
 										"**/ArticleServiceApplication.class",
+										"**/ArticleControllerExHandler.class",
 										"**/dto/**",
 										"**/entity/**",
 										"**/exception/**",

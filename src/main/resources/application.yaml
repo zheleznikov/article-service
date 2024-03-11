@@ -7,3 +7,7 @@ spring:
     username: usr
     password: pwd
     driver-class-name: org.postgresql.Driver
+
+service:
+  messages.article-created: Article successfully created
+

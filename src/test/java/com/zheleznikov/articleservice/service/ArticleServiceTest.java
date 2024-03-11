@@ -13,6 +13,7 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -36,6 +37,7 @@ public class ArticleServiceTest {
     public void setup() {
         articleRepository = mock(ArticleRepository.class);
         articleService = new ArticleService(articleRepository);
+        ReflectionTestUtils.setField(articleService, "message", "Article successfully created");
     }
 
     @Test
