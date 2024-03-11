@@ -140,25 +140,26 @@ Success response JSON-example:
 
 ## how to run
 1. Clone an app
+        
+        git clone https://github.com/zheleznikov/article-service.git
 
-`git clone https://github.com/zheleznikov/article-service.git`
 2. Run Docker
-
-`docker run --rm --name pg-docker -e POSTGRES_PASSWORD=pwd -e POSTGRES_USER=usr -e POSTGRES_DB=localDB -p 5430:5432 postgres:13`
+        
+           docker run --rm --name pg-docker -e POSTGRES_PASSWORD=pwd -e POSTGRES_USER=usr -e POSTGRES_DB=localDB -p 5430:5432 postgres:13
 
 3. Start an app
+        
+        ./gradlew bootRun
 
-`./gradlew bootRun`
 
 
-
-Also you could build an app and then run a jar
+##### You could also build an app and then run a jar
 
 3.1. Build an APP
-
-`./gradlew build`
+    
+    ./gradlew build
 
 
 3.2. Run jar
-
-`java -jar ./build/libs/article-service-0.0.1-SNAPSHOT.jar`
+    
+    java -jar ./build/libs/article-service-0.0.1-SNAPSHOT.jar
