@@ -1,6 +1,7 @@
 # A test application for store articles
 [![Build app](https://github.com/zheleznikov/article-service/actions/workflows/build-app.yml/badge.svg)](https://github.com/zheleznikov/article-service/actions/workflows/build-app.yml)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ca2a9249bbf69d4893a4/test_coverage)](https://codeclimate.com/github/zheleznikov/article-service/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ca2a9249bbf69d4893a4/maintainability)](https://codeclimate.com/github/zheleznikov/article-service/maintainability)
 
 An application:
 - can receive an article and then save it into DB. Available for user and admin.
