@@ -62,6 +62,7 @@ tasks.jacocoTestReport {
 										"**/entity/**",
 										"**/exception/**",
 										"**/repository/**",
+										"**/config/**",
 						))
 				}
 		}))
