@@ -18,14 +18,14 @@ public class CreateArticleRequest {
 
     @NotBlank
     @NotNull
-    private String Author;
+    private String author;
 
     @NotBlank
     @NotNull
-    private String Title;
+    private String title;
 
     @NotBlank
     @NotNull
-    private String Content;
+    private String content;
 
 }

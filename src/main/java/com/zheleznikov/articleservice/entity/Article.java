@@ -27,7 +27,7 @@ public class Article {
 
     private String title;
 
-    private String Author;
+    private String author;
 
     private String content;
 

@@ -19,19 +19,19 @@ public class ArticleController {
 
     private final ArticleService articleService;
 
-    @PostMapping("/api/v1/create-article")
+    @PostMapping("/api/v1/article")
     public CreateArticleResponse createArticle(@RequestBody CreateArticleRequest request) {
         return articleService.createArticle(request);
     }
 
-    @GetMapping("/api/v1/article-list")
+    @GetMapping("/api/v1/articles")
     public Page<Article> getListOfArticles(
             @RequestParam(defaultValue = "0") int number,
             @RequestParam(defaultValue = "15") int size) {
         return articleService.getArticles(number, size);
     }
 
-    @GetMapping("/inner-api/number-of-articles-last-7-days")
+    @GetMapping("/inner-api/article-count")
     public CountOfArticlesResponse getCountOfArticlesFor7Days() {
         return new CountOfArticlesResponse(articleService.getNumberOfArticlesPublishedOnDailyBasesFor7Days());
     }
